@@ -9,7 +9,11 @@ function App() {
       <Search />
       <p className="tag">
         This app was coded by Erin Sladen and is{" "}
-        <a href="https://github.com/erin-986/weather-react" target="_blank">
+        <a
+          href="https://github.com/erin-986/weather-react"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           open-sourced
         </a>
       </p>
