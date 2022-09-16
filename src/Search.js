@@ -20,7 +20,7 @@ export default function WeatherSearch() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=sydney&appid=4cefc11f1f38ea5cac3c215cbf9217d2&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4cefc11f1f38ea5cac3c215cbf9217d2&units=metric`;
     axios.get(url).then(displayWeather);
   }
 
@@ -47,7 +47,7 @@ export default function WeatherSearch() {
   return (
     <div className="weather">
       {form}
-      <h1>Sydney ☀️</h1>
+      <h1 className="pb-3">Sydney</h1>
       <ul>
         <li>Temperature: {Math.round(weather.temperature)}°C</li>
         <li>Description: {weather.description}</li>
@@ -58,42 +58,42 @@ export default function WeatherSearch() {
         <div className="row">
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Sat ☀️</h3>
+              <h3>Sat</h3>
               <p>Min: 17</p>
               <p>Max: 23</p>
             </div>
           </div>
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Sun ☀️</h3>
+              <h3>Sun</h3>
               <p>Min: 16</p>
               <p>Max: 22</p>
             </div>
           </div>
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Mon ☀️</h3>
+              <h3>Mon</h3>
               <p>Min: 14</p>
               <p>Max: 20</p>
             </div>
           </div>
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Tue ☀️</h3>
+              <h3>Tue</h3>
               <p>Min: 14</p>
               <p>Max: 21</p>
             </div>
           </div>
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Wed ☀️</h3>
+              <h3>Wed</h3>
               <p>Min: 10</p>
               <p>Max: 21</p>
             </div>
           </div>
           <div className="col-sm-2 text-center p-2">
             <div className="card">
-              <h3>Thu ☀️</h3>
+              <h3>Thu</h3>
               <p>Min: 12</p>
               <p>Max: 19</p>
             </div>
