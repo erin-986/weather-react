@@ -7,6 +7,10 @@ function App() {
     <div className="App">
       <DayDate />
       <Search />
+      <p className="tag">
+        This app was coded by Erin Sladen and is{" "}
+        <a href="https://github.com/erin-986/weather-react">open-sourced</a>
+      </p>
     </div>
   );
 }
