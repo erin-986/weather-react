@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 2px;
+}
+
+.btn-search {
+  background: blue;
+}
+
+.btn-current {
+  background: green;
+}
+
+.text-input {
+  line-height: 2;
+  margin-bottom: 40px;
+}
